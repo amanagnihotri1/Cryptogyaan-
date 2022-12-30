@@ -72,14 +72,22 @@ export default function Show() {
     </div>
     <div className='small-detail'>
      <h3>Current Prices</h3>
-     <span>{store.data.market_data.current_price.usd}</span>
+     <span>$ {store.data.market_data.current_price.usd}</span>
     </div>
     <div className='small-detail'>
      <h3>1 year change</h3>
-     <span>{store.data.market_data.price_change_percentage_1y.toFixed(2)}</span> 
+     <span>{store.data.market_data.price_change_percentage_1y.toFixed(2)}%</span> 
     </div>
   </div>
    </div>
+      <div className='coindesc'>
+      <div className='width'>
+      <h2>Description</h2>
+      <span>
+        {store.data.description.en}
+        </span>
+      </div>
+      </div>
    </>}
    </div>
   )

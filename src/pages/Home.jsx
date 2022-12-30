@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Listitems from '../components/Listitems';
 import classNames from 'classnames/bind';
 import hStore from "../stores/hStore";
+import { AboutCrypto } from '../components/AboutCrypto';
 export default function Home() {
    const store=hStore();
      useEffect(() => {
@@ -34,6 +35,7 @@ export default function Home() {
         </div>
        </div>
       </div>  
+      <AboutCrypto/>
     </div>
   );
 }
